@@ -10,6 +10,8 @@ use Acme\DemoBundle\Form\ContactType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
+use Symfony\Component\Form\FormFactoryInterface;
+
 class DemoController extends Controller
 {
     /**
@@ -36,12 +38,20 @@ class DemoController extends Controller
      */
     public function contactAction()
     {
-        $form = $this->get('form.factory')->create(new ContactType());
+        $cidade = $this->getDoctrine()->getRepository('BFOSBrasilBundle:Cidade')->findOneByNome('Vila Velha');
+        $data = array('email'=>'contato@acme.com.br', 'message'=> 'Mensagem é escrita aqui.', 'cidade'=>$cidade);
+        /**
+         * @var FormFactoryInterface $form_factory
+         */
+        $form_factory = $this->get('form.factory');
+        $form = $form_factory->create(new ContactType(), $data);
 
         $request = $this->get('request');
         if ('POST' == $request->getMethod()) {
-            $form->bindRequest($request);
+            $form->bind($request);
+
             if ($form->isValid()) {
+                $data = $form->getData();
                 $mailer = $this->get('mailer');
                 // .. setup a message and send it
                 // http://symfony.com/doc/current/cookbook/email.html

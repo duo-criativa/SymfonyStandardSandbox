@@ -10,6 +10,7 @@ class ContactType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('email', 'email');
+        $builder->add('cidade', 'bfos_cidade_choice');
         $builder->add('message', 'textarea');
     }
 
