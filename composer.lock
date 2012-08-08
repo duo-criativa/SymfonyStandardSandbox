@@ -1,11 +1,17 @@
 {
-    "hash": "250cd2c8ac08f1a1a1682994fa99146b",
+    "hash": "53300f0b654fa3ef0c5cc89ea5e6fe17",
     "packages": [
         {
             "package": "brazilianfriendsofsymfony/brasil-bundle",
             "version": "dev-master",
-            "source-reference": "3b87e98d1f072100e98328a3e1d8f1f85968b4cc",
-            "commit-date": "1343296713"
+            "source-reference": "4839c081ffc3a2c319ac0952f54b5fff9da81445",
+            "commit-date": "1344343227"
+        },
+        {
+            "package": "brazilianfriendsofsymfony/settings-management-bundle",
+            "version": "dev-master",
+            "source-reference": "6715cec553f1c1709c6fde233a737eb1105e62d8",
+            "commit-date": "1343769302"
         },
         {
             "package": "doctrine/common",
@@ -158,8 +164,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "b91a4a8368abdca7b9728f3cf170175c3aa3befc",
-            "commit-date": "1344326985"
+            "source-reference": "7dbadbf29acc731250459958a1d7e99c9809c74a",
+            "commit-date": "1344353552"
         },
         {
             "package": "twig/extensions",
@@ -195,6 +201,7 @@
         "sensio/framework-extra-bundle": 20,
         "sensio/generator-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
-        "brazilianfriendsofsymfony/brasil-bundle": 20
+        "brazilianfriendsofsymfony/brasil-bundle": 20,
+        "brazilianfriendsofsymfony/settings-management-bundle": 20
     }
 }

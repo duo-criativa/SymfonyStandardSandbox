@@ -1,5 +1,18 @@
+AppAdminBundle:
+    resource: "@AppAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+BFOSExampleAdminSettingsBundle:
+    resource: "@BFOSExampleAdminSettingsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 bfos_brasil:
     resource: "@BFOSBrasilBundle/Resources/config/routing.yml"
+
+bfos_settings_management:
+    resource: "@BFOSSettingsManagementBundle/Resources/config/routing.yml"
 
 # Internal routing configuration to handle ESI
 #_internal:
