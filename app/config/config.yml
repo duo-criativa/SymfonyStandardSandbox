@@ -24,12 +24,13 @@ twig:
     form:
         resources:
             - 'BFOSBrasilBundle:Form:form_div_layout.html.twig'
+            - 'BFOSTwigExtensionsBundle:Form:form_div_layout.html.twig'
 
 # Assetic Configuration
 assetic:
     debug:          %kernel.debug%
     use_controller: false
-    bundles:        [ ]
+    bundles:        [ BFOSTwigExtensionsBundle ]
     #java: /usr/bin/java
     filters:
         cssrewrite: ~

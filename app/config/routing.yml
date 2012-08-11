@@ -1,3 +1,8 @@
+BFOSExampleTwigExtensionsBundle:
+    resource: "@BFOSExampleTwigExtensionsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 AppAdminBundle:
     resource: "@AppAdminBundle/Controller/"
     type:     annotation

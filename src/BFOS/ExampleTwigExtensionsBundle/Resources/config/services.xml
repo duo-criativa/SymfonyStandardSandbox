@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="bfos_example_twig_extensions.category_manager.class">BFOS\ExampleTwigExtensionsBundle\Entity\CategoryManager</parameter>
+    </parameters>
+
+    <services>
+        <service id="bfos_example_twig_extensions.category_manager" class="%bfos_example_twig_extensions.category_manager.class%">
+            <argument type="service" id="service_container" />
+        </service>
+    </services>
+</container>

@@ -1,5 +1,5 @@
 {
-    "hash": "53300f0b654fa3ef0c5cc89ea5e6fe17",
+    "hash": "dca7b316d133eba444ba7a5d95ead264",
     "packages": [
         {
             "package": "brazilianfriendsofsymfony/brasil-bundle",
@@ -10,8 +10,14 @@
         {
             "package": "brazilianfriendsofsymfony/settings-management-bundle",
             "version": "dev-master",
-            "source-reference": "6715cec553f1c1709c6fde233a737eb1105e62d8",
-            "commit-date": "1343769302"
+            "source-reference": "be29a963cbdbe485811a537704474f349e0ae93c",
+            "commit-date": "1344446834"
+        },
+        {
+            "package": "brazilianfriendsofsymfony/twig-extensions-bundle",
+            "version": "dev-master",
+            "source-reference": "0c78284c5fe6d2fb3cd508a6931f772a4d7b6c62",
+            "commit-date": "1343776619"
         },
         {
             "package": "doctrine/common",
@@ -40,8 +46,8 @@
         {
             "package": "doctrine/doctrine-bundle",
             "version": "dev-master",
-            "source-reference": "ed8d02b491512f947fdb2f8b665dc8fd72b5879c",
-            "commit-date": "1343657020"
+            "source-reference": "4d9bb0f3af470556983eb41a7d19ede23401ef0b",
+            "commit-date": "1344549563"
         },
         {
             "package": "doctrine/doctrine-fixtures-bundle",
@@ -100,8 +106,8 @@
         {
             "package": "kriswallsmith/assetic",
             "version": "dev-master",
-            "source-reference": "ce9c557989f95abffe792c63f84f404a2f019ef8",
-            "commit-date": "1344261272"
+            "source-reference": "d1d5066d9071a76d771993081ee23137e96216b7",
+            "commit-date": "1344507381"
         },
         {
             "package": "monolog/monolog",
@@ -140,8 +146,14 @@
         {
             "package": "symfony/assetic-bundle",
             "version": "dev-master",
-            "source-reference": "0c09207be07b044e06d28a4111f554f071e5b658",
-            "commit-date": "1343812720"
+            "alias-pretty-version": "2.1.x-dev",
+            "alias-version": "2.1.9999999.9999999-dev"
+        },
+        {
+            "package": "symfony/assetic-bundle",
+            "version": "dev-master",
+            "source-reference": "ec3a65d3eab342af9e93a3c21af0ac7b78e01c17",
+            "commit-date": "1344507386"
         },
         {
             "package": "symfony/monolog-bundle",
@@ -164,8 +176,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "7dbadbf29acc731250459958a1d7e99c9809c74a",
-            "commit-date": "1344353552"
+            "source-reference": "31536c36ec8875aee1406aa7d7a0b5e38a04af66",
+            "commit-date": "1344599303"
         },
         {
             "package": "twig/extensions",
@@ -202,6 +214,7 @@
         "sensio/generator-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "brazilianfriendsofsymfony/brasil-bundle": 20,
-        "brazilianfriendsofsymfony/settings-management-bundle": 20
+        "brazilianfriendsofsymfony/settings-management-bundle": 20,
+        "brazilianfriendsofsymfony/twig-extensions-bundle": 20
     }
 }

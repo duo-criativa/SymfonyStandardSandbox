@@ -24,6 +24,8 @@ class AppKernel extends Kernel
             new BFOS\SettingsManagementBundle\BFOSSettingsManagementBundle(),
             new BFOS\ExampleAdminSettingsBundle\BFOSExampleAdminSettingsBundle(),
             new App\AdminBundle\AppAdminBundle(),
+            new BFOS\ExampleTwigExtensionsBundle\BFOSExampleTwigExtensionsBundle(),
+            new BFOS\TwigExtensionsBundle\BFOSTwigExtensionsBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
