@@ -14,23 +14,6 @@ use Symfony\Component\Form\FormFactoryInterface;
 
 class DemoController extends Controller
 {
-    /**
-     * @Route("/", name="_demo")
-     * @Template()
-     */
-    public function indexAction()
-    {
-        return array();
-    }
-
-    /**
-     * @Route("/hello/{name}", name="_demo_hello")
-     * @Template()
-     */
-    public function helloAction($name)
-    {
-        return array('name' => $name);
-    }
 
     /**
      * @Route("/contact", name="_demo_contact")
@@ -64,4 +47,5 @@ class DemoController extends Controller
 
         return array('form' => $form->createView());
     }
+
 }

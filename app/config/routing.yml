@@ -1,3 +1,18 @@
+BFOSExamplePagseguroBundle:
+    resource: "@BFOSExamplePagseguroBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+AppFrameworkBundle:
+    resource: "@AppFrameworkBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+AppFrontendBundle:
+    resource: "@AppFrontendBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 BFOSExampleTwigExtensionsBundle:
     resource: "@BFOSExampleTwigExtensionsBundle/Controller/"
     type:     annotation

@@ -20,12 +20,20 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
+
+            // BFOS bundles
             new BFOS\BrasilBundle\BFOSBrasilBundle(),
             new BFOS\SettingsManagementBundle\BFOSSettingsManagementBundle(),
-            new BFOS\ExampleAdminSettingsBundle\BFOSExampleAdminSettingsBundle(),
+            new BFOS\TwigExtensionsBundle\BFOSTwigExtensionsBundle(),
+            new BFOS\PagseguroBundle\BFOSPagseguroBundle(),
+
+            // project bundles
             new App\AdminBundle\AppAdminBundle(),
+            new App\FrontendBundle\AppFrontendBundle(),
+            new App\FrameworkBundle\AppFrameworkBundle(),
+            new BFOS\ExamplePagseguroBundle\BFOSExamplePagseguroBundle(),
             new BFOS\ExampleTwigExtensionsBundle\BFOSExampleTwigExtensionsBundle(),
-            new BFOS\TwigExtensionsBundle\BFOSTwigExtensionsBundle()
+            new BFOS\ExampleAdminSettingsBundle\BFOSExampleAdminSettingsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

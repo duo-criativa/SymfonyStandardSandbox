@@ -1,0 +1,14 @@
+{% extends 'AppFrontendBundle::layout.html.twig' %}
+
+{% block content %}
+<div class="row-fluid">
+    <div class="span12">
+        <h2>Novo pagamento</h2>
+
+        <form action="">
+            {{form_widget(form)}}
+            <button type="submit">Pagar</button>
+        </form>
+    </div><!--/span-->
+</div><!--/row-->
+{% endblock content %}
