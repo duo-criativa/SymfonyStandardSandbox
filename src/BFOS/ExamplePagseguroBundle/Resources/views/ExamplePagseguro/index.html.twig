@@ -1,0 +1,27 @@
+{% extends 'AppFrontendBundle::layout.html.twig' %}
+
+{% block content %}
+<div class="row-fluid">
+    <div class="span12">
+        <h2>Lista de pagamentos registrados</h2>
+
+        <div class="well">
+            <a class="btn btn-primary" href="{{path('frontend_pagseguro_pagamentos_novo')}}">Novo pagamento</a>
+        </div>
+        <p>
+        <table class="table">
+        <tr>
+            <th>Referencia</th>
+            <th>Atualizado em</th>
+        </tr>
+        </table>
+            {% for pagamento in pagamentos %}
+        <tr>
+            <td>{{pagamento.reference}}</td>
+            <td>{{pagamento.updatedAt}}</td>
+        </tr>
+            {% endfor %}
+        </p>
+    </div><!--/span-->
+</div><!--/row-->
+{% endblock content %}
