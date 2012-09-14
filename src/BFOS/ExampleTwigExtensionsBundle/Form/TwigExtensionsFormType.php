@@ -19,9 +19,15 @@ class TwigExtensionsFormType extends AbstractType
 
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $url = $this->container->get('router')->generate('bfos_te_categories_autocomplete');
+        $url = $this->container->get('router')->generate('bfos_example_twig_extensions_categories_autocomplete');
         $builder->add('categories', 'bfos_fcbkcomplete_entity',
-            array('class'=>'BFOS\ExampleTwigExtensionsBundle\Entity\Category', 'url'=>$url, 'fcbkcomplete_options'=>array('maxitems'=>40, 'maxshownitems'=>40), 'required'=>true));
+            array('class'=>'BFOS\ExampleTwigExtensionsBundle\Entity\Category',
+                'url'=>$url,
+                'fcbkcomplete_options'=>array('maxitems'=>40, 'maxshownitems'=>40),
+                'required'=>true
+            )
+        );
+        $builder->add('someDate', 'bfos_date');
     }
 
     /**

@@ -19,6 +19,8 @@
         }
     </style>
     <link href="{{ asset('bundles/appframework/vendor/bootstrap/2.1.0/css/bootstrap-responsive.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/bundles/bfostwigextensions/vendor/FCBKcomplete/2.8.9.3/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/bfostwigextensions/vendor/jquery/ui/ui-lightness/jquery-ui-1.8.20.custom.css') }}">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -48,6 +50,14 @@
             {% endblock sidebar %}
         </div><!--/span-->
         <div class="span9">
+            {% block flash %}
+            {% if app.session.hasFlash('error') %}
+            <div class="alert alert-error">{{app.session.flash('error')}}</div>
+            {% endif %}
+            {% if app.session.hasFlash('notice') %}
+            <div class="alert alert-success">{{app.session.flash('notice')}}</div>
+            {% endif %}
+            {% endblock flash %}
             {% block content %}
             {% endblock content %}
         </div><!--/span-->

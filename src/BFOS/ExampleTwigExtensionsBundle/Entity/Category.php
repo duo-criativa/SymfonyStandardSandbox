@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * BFOS\ExampleTwigExtensionsBundle\Entity\Category
  *
- * @ORM\Table()
+ * @ORM\Table(name="bfos_example_twig_extensions_category")
  * @ORM\Entity
  */
 class Category

@@ -1,0 +1,14 @@
+{% extends 'BFOSExampleTwigExtensionsBundle::layout_twigextensions.html.twig' %}
+
+{% block content %}
+<div class="row-fluid">
+    <div class="span12">
+        <h2>Selected categories</h2>
+        <ul>
+            {% for category in data.categories %}
+            <li>{{category.id}} - {{category}}</li>
+            {% endfor %}
+        </ul>
+    </div><!--/span-->
+</div>
+{% endblock content %}

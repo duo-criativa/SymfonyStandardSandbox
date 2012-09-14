@@ -10,7 +10,7 @@
 <body>
 <div id="symfony-wrapper">
     <div id="symfony-header">
-        <a href="{{ path('_welcome') }}">
+        <a href="#">
             <img src="{{ asset('bundles/acmedemo/images/logo.gif') }}" alt="Symfony logo" />
         </a>
         <form id="symfony-search" method="GET" action="http://symfony.com/search">
@@ -29,7 +29,7 @@
     {% block content_header %}
     <ul id="menu">
         {% block content_header_more %}
-        <li><a href="{{ path('_demo') }}">Demo Home</a></li>
+        <li><a href="#">Demo Home</a></li>
         {% endblock %}
     </ul>
 

@@ -18,6 +18,14 @@ class TwigExtensionsForm
      */
     protected $categories;
 
+    protected $someDate;
+
+    function __construct()
+    {
+        $this->someDate = new \DateTime();
+    }
+
+
     /**
      * @param \Doctrine\Common\Collections\Collection $categories
      */
@@ -32,5 +40,16 @@ class TwigExtensionsForm
     public function getCategories()
     {
         return $this->categories;
+    }
+
+    public function setSomeDate($someDate)
+    {
+        $this->someDate = $someDate;
+        return $this;
+    }
+
+    public function getSomeDate()
+    {
+        return $this->someDate;
     }
 }
